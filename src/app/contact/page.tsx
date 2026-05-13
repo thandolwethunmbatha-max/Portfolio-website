@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ContactForm } from "@/components/ContactForm";
+import { Reveal } from "@/components/Reveal";
+export const metadata: Metadata = { title: "Contact", description: "Contact Thandolwethu Mbatha for graphic design, visual storytelling, brand identity, social media, and web design collaborations." };
+export default function ContactPage() {
+  return <section className="min-h-screen bg-[#050505] px-4 py-32 text-white sm:px-6 lg:px-8"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.1fr_.9fr]"><div><p className="text-xs font-black uppercase tracking-[0.24em] text-[#D9FF00]">Contact</p><h1 className="mt-6 display text-[clamp(4.4rem,14vw,13rem)] uppercase leading-[.74]">Let's make the brand impossible to ignore.</h1><p className="mt-8 max-w-2xl text-xl leading-9 text-white/65">For collaborations, campaign visuals, web design, identity systems, social media graphics, or photography-led projects, send a short note and Thandolwethu will get back to you.</p><div className="mt-10 grid gap-4 text-sm uppercase tracking-[0.16em]"><Link href="mailto:Thandolwethu.n.mbatha@gmail.com" className="border-b border-white/15 pb-3 hover:text-[#D9FF00]">Thandolwethu.n.mbatha@gmail.com</Link><Link href="tel:+27680495535" className="border-b border-white/15 pb-3 hover:text-[#D9FF00]">+27 68 049 5535</Link><Link href="https://www.behance.net/thandolwethumbatha" className="border-b border-white/15 pb-3 hover:text-[#D9FF00]">Behance profile</Link><p className="text-white/45">References available on request.</p></div></div><Reveal className="border border-white/10 p-5 md:p-8"><h2 className="display mb-6 text-5xl uppercase">Project enquiry</h2><ContactForm /></Reveal></div></section>;
+}

@@ -1,0 +1,2 @@
+const experience = ["Maison Originals — Part-time Graphic Designer — 2022–2025", "Safe Space Africa — Part-time Graphic Designer — 2023–2024", "Freelancer — Graphic Designer — 2019–2025"];
+export function ExperienceTimeline() { return <div className="border-t border-black/15">{experience.map((item, index) => <div key={item} className="grid gap-4 border-b border-black/15 py-5 sm:grid-cols-[80px_1fr]"><span className="display text-4xl">0{index + 1}</span><p className="text-lg font-bold uppercase tracking-[-.03em]">{item}</p></div>)}</div>; }

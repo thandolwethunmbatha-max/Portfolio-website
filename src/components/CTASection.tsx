@@ -1,0 +1,3 @@
+import { Button } from "./Button";
+import { Reveal } from "./Reveal";
+export function CTASection() { return <section className="paper-grid bg-[#F4F4F0] px-4 py-24 text-black sm:px-6 lg:px-8"><Reveal className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1fr_.45fr] md:items-end"><h2 className="display text-6xl uppercase leading-[.82] sm:text-8xl lg:text-9xl">Need a visual system with edge?</h2><div><p className="mb-6 text-lg leading-7 text-black/65">Available for brand identity, social media graphics, web design, campaign assets, e-commerce visuals, and creative direction collaborations.</p><Button href="/contact" variant="dark">Start a project</Button></div></Reveal></section>; }
